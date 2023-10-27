@@ -72,7 +72,7 @@ class Bot(Client):
 
         self.set_parse_mode(ParseMode.HTML)
         self.LOGGER(__name__).info(f"Bot Running..!\n\nCreated by \nhttps://t.me/panimeid")
-        self.LOGGER(__name__).info(f""" \n\n 𝔭𝔞𝔫𝔦𝔪𝔢𝔦𝔡 """)
+        self.LOGGER(__name__).info(f""" 𝔭𝔞𝔫𝔦𝔪𝔢𝔦𝔡 """)
         self.username = usr_bot_me.username
         #web-response
         app = web.AppRunner(await web_server())
