@@ -7,7 +7,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5571017677:AAGBRerUBG3-yNzGE9IJuJwgcZ-a0_fABWk")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6049348368:AAERpY2p_xJoFRMkP5uKrUTFnUTVAuI_7E4")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "26796802"))
@@ -26,11 +26,11 @@ PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Eln:Chaik2501@cluster0.9ipuplz.mongodb.net/")
-DB_NAME = os.environ.get("DATABASE_NAME", "FSPan")
+DB_NAME = os.environ.get("DATABASE_NAME", "drstoneIII")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001862629813"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1002108229559"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -53,12 +53,12 @@ CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
 
 #Set true if you want Disable your Channel Posts Share button
-DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'False'
+DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 
-USCH = os.environ.get("USCH", "@ongoingpmid")
-USOW = os.environ.get("USOW", "El")
+USCH = os.environ.get("USCH", "@panimeid")
+USOW = os.environ.get("USOW", "EL")
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1474271232)
