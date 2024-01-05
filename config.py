@@ -38,7 +38,7 @@ FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001863480442"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋, Enjoy disini.\n\n join channel 18+ @BICEPCLUBZ</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋, Enjoy disini.\n\n join @nimeahogb</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "1889131038 5531142222").split()):
