@@ -10,19 +10,19 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6088353264:AAEkXQCrYo8Dos2LNDX8GzvblWnr5Gc8rW4")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6560600948:AAH_BnhfeCx9h8ZSJN0CP2zrcXfFflGQ6mI")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "7051115"))
+APP_ID = int(os.environ.get("APP_ID", "24150937"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "fc1046f835d402e18901cf4717de43dd")
+API_HASH = os.environ.get("API_HASH", "68afef4376975a758e0e49221ac17ced")
 
 #Your db channel Id
 CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001731618645"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1804633295"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6896998500"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -33,7 +33,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "Bahanbangsa")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002146966269"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001990592396"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1002083577996"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -41,7 +41,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋, Enjoy disini.\n\n join @BahanBangsaaa</b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1804633295 5531142222").split()):
+    for x in (os.environ.get("ADMINS", "1804633295 6896998500").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -60,7 +60,7 @@ DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'Fals
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 
-USCH = os.environ.get("USCH", "@BahanBangsaTeam")
+USCH = os.environ.get("USCH", "@BB69TEAM")
 USOW = os.environ.get("USOW", "@BahanBangsaaa")
 
 ADMINS.append(OWNER_ID)
