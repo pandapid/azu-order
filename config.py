@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6825910429:AAFXCUqvdV7Kadgo0PCeZp3Wu9vbNbAoZgE")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6088353264:AAHK-hG6KxLTOxd3zg20Gvc8ReEtIcOahqM")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "28248389"))
@@ -19,29 +19,29 @@ APP_ID = int(os.environ.get("APP_ID", "28248389"))
 API_HASH = os.environ.get("API_HASH", "109d635ff430a728cfc8ecdce9b9cf52")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001990225939"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001731618645"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1889131038"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1804633295"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Eln:Chaik2501@cluster0.9ipuplz.mongodb.net/")
-DB_NAME = os.environ.get("DATABASE_NAME", "Aho")
+DB_NAME = os.environ.get("DATABASE_NAME", "Bahanbangsa")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001602214121"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001863480442"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002146966269"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001608650118"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋, Enjoy disini.\n\n join @nimeahogb</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋, Enjoy disini.\n\n join @BahanBangsaaa</b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1889131038 5531142222").split()):
+    for x in (os.environ.get("ADMINS", "1804633295 5531142222").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -60,8 +60,8 @@ DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'Fals
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 
-USCH = os.environ.get("USCH", "@anime_ongoing_aho")
-USOW = os.environ.get("USOW", "@hrdylmn")
+USCH = os.environ.get("USCH", "@BahanBangsaTeam")
+USOW = os.environ.get("USOW", "@BahanBangsaaa")
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1474271232)
