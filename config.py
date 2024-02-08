@@ -10,38 +10,38 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6560600948:AAH_BnhfeCx9h8ZSJN0CP2zrcXfFflGQ6mI")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6387715337:AAG-GouYhc0CHNSFMgP0bifHTWNunCY2Weg")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "24150937"))
+APP_ID = int(os.environ.get("APP_ID", "29684228"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "68afef4376975a758e0e49221ac17ced")
+API_HASH = os.environ.get("API_HASH", "9c201a654e8fc97576ce5c077cf529d2")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001731618645"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001954090257"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6896998500"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5531142222"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Eln:Chaik2501@cluster0.9ipuplz.mongodb.net/")
-DB_NAME = os.environ.get("DATABASE_NAME", "Bahanbangsa")
+DB_NAME = os.environ.get("DATABASE_NAME", "pusat")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002146966269"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1002083577996"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001871589417"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001694677224"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋, Enjoy disini.\n\n join @BahanBangsaaa</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋, Enjoy disini.\n\n join @bahan_asupan_sma</b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1804633295 6896998500").split()):
+    for x in (os.environ.get("ADMINS", "869513589").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -60,8 +60,8 @@ DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'Fals
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 
-USCH = os.environ.get("USCH", "@BB69TEAM")
-USOW = os.environ.get("USOW", "@BahanBangsaaa")
+USCH = os.environ.get("USCH", "@bahan_asupan_sma")
+USOW = os.environ.get("USOW", "@bahan_asupan_dood")
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1474271232)
