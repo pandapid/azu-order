@@ -29,13 +29,13 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Eln:Chaik2501@cluster0.9i
 DB_NAME = os.environ.get("DATABASE_NAME", "FSPan")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001862629813"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1002108229559"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002119365000"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001551424618"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋,\nMampir dulu boleh kali Bree \n@panimeid & @ongoingpmid</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋,\nMampir boleh kali Bree https://t.me/+a57sK8M8gftkODc1</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "1474271232 5531142222").split()):
