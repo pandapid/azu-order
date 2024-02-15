@@ -26,16 +26,16 @@ PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Eln:Chaik2501@cluster0.9ipuplz.mongodb.net/")
-DB_NAME = os.environ.get("DATABASE_NAME", "drstoneIII")
+DB_NAME = os.environ.get("DATABASE_NAME", "FSPan")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001862629813"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1002108229559"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001983145020"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1002119365000"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋,\nMampir dulu boleh kali Bree \n@panimeid & @ongoingpmid</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋,\nMampir dulu boleh kali Bree \n@nontonpid</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "1474271232 5531142222").split()):
@@ -57,7 +57,7 @@ DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 
-USCH = os.environ.get("USCH", "@devpid")
+USCH = os.environ.get("USCH", "@nontonpid")
 USOW = os.environ.get("USOW", "EL")
 
 ADMINS.append(OWNER_ID)
