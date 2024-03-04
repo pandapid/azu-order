@@ -9,7 +9,7 @@ from pyrogram.enums import ParseMode
 import sys
 from datetime import datetime
 
-from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, CHANNEL_ID, PORT, FORCE_SUB_GROUP
+from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, CHANNEL_ID, PORT
 
 class Bot(Client):
     def __init__(self):
@@ -43,23 +43,7 @@ class Bot(Client):
                 self.LOGGER(__name__).warning(f"Harap periksa kembali nilai FORCE_SUB_CHANNEL dan Pastikan Bot adalah Admin di saluran dengan Undang Pengguna melalui Izin Tautan, Current Force Sub Channel Value: {FORCE_SUB_CHANNEL}")
                 self.LOGGER(__name__).info("\nBot Stopped. Chat https://t.me/impidbot for support")
                 sys.exit()
-        if FORCE_SUB_GROUP:
-            try:
-                link = await self.export_chat_invite_link(FORCE_SUB_GROUP)
-                self.invitelink2 = link
-            except Exception as a:
-                self.LOGGER(__name__).warning(a)
-                self.LOGGER(__name__).warning(
-                    "Bot tidak dapat Mengambil link Undangan dari FORCE_SUB_GROUP!"
-                )
-                self.LOGGER(__name__).warning(
-                    f"Silakan periksa kembali var FORCE_SUB_GROUP dan Pastikan Bot anda Admin di Channel dengan izin link invite Pengguna melalui link undangan, Subs Group Saat Ini: {FORCE_SUB_GROUP}"
-                )
-                self.LOGGER(__name__).info(
-                    "\nBot Berhenti. Chat https://t.me/impidbot untuk Bantuan"
-                )
-                sys.exit()
-        try:
+         try:
             db_channel = await self.get_chat(CHANNEL_ID)
             self.db_channel = db_channel
             test = await self.send_message(chat_id = db_channel.id, text = "Test Message")
