@@ -10,30 +10,29 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5914330860:AAH55FnLcbXzWiwpIL83frZgItQzqwTxMYQ")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7187537860:AAHPOvCyKL8FHwHHQzIOFzxMq9NRmVRGNdI")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "27256386"))
+APP_ID = int(os.environ.get("APP_ID", "29102786"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "f39e321f1892ac1bd151e2c0904e1f0d")
+API_HASH = os.environ.get("API_HASH", "d00ce84c4074079bedb49347fb1a6a7b")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001868607221"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002064012574"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5005666003"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1607357139"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Eln:Chaik2501@cluster0.9ipuplz.mongodb.net/")
-DB_NAME = os.environ.get("DATABASE_NAME", "drstoneIII")
+DB_NAME = os.environ.get("DATABASE_NAME", "drs2")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001589694743"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001948516465"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -41,7 +40,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋,\n\n Liat about aja lah</b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5005666003 1607357139").split()):
+    for x in (os.environ.get("ADMINS", "5005666003 1607357139 5706360525").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
