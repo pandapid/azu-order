@@ -9,7 +9,7 @@ from pyrogram.enums import ParseMode
 import sys
 from datetime import datetime
 
-from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, CHANNEL_ID, PORT, FORCE_SUB_GROUP
+from config import API_HASH, APP_ID, LOGGER, TG_BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, CHANNEL_ID, PORT, FORCE_SUB_GROUP, FORCE_SUB_GROUP2
 
 class Bot(Client):
     def __init__(self):
@@ -54,6 +54,22 @@ class Bot(Client):
                 )
                 self.LOGGER(__name__).warning(
                     f"Silakan periksa kembali var FORCE_SUB_GROUP dan Pastikan Bot anda Admin di Channel dengan izin link invite Pengguna melalui link undangan, Subs Group Saat Ini: {FORCE_SUB_GROUP}"
+                )
+                self.LOGGER(__name__).info(
+                    "\nBot Berhenti. Chat https://t.me/impidbot untuk Bantuan"
+                )
+                sys.exit()
+        if FORCE_SUB_GROUP2:
+            try:
+                link = await self.export_chat_invite_link(FORCE_SUB_GROUP2)
+                self.invitelink3 = link
+            except Exception as a:
+                self.LOGGER(__name__).warning(a)
+                self.LOGGER(__name__).warning(
+                    "Bot tidak dapat Mengambil link Undangan dari FORCE_SUB_GROUP2!"
+                )
+                self.LOGGER(__name__).warning(
+                    f"Silakan periksa kembali var FORCE_SUB_GROUP2 dan Pastikan Bot anda Admin di Channel dengan izin link invite Pengguna melalui link undangan, Subs Group Saat Ini: {FORCE_SUB_GROUP2}"
                 )
                 self.LOGGER(__name__).info(
                     "\nBot Berhenti. Chat https://t.me/impidbot untuk Bantuan"

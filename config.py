@@ -34,6 +34,7 @@ DB_NAME = os.environ.get("DATABASE_NAME", "pusat")
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001871589417"))
 FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001694677224"))
+FORCE_SUB_GROUP2 = int(os.environ.get("FORCE_SUB_GROUP2", "-1002009423518"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
