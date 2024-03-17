@@ -10,41 +10,41 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6354752626:AAH5qLQieENDts4MefVBJ6bX7HxW5z0otdU")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "26796802"))
+APP_ID = int(os.environ.get("APP_ID", "28291243"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "b8cc96196eb105c33d8ce193e5efff5c")
+API_HASH = os.environ.get("API_HASH", "af52dcf989a50163869efb6c38e2e54b")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001292557562"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002060503331"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1474271232"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6270063580"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Eln:Chaik2501@cluster0.9ipuplz.mongodb.net/")
-DB_NAME = os.environ.get("DATABASE_NAME", "FSPan")
+DB_NAME = os.environ.get("DATABASE_NAME", "Maxsharee")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001862629813"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001728175396"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002051438943"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1002001254975"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋,\nMampir dulu boleh kali Bree \n@panimeid & @ongoingpmid</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋,\nBagaimana hari mu ?</b>")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1474271232 5531142222").split()):
+    for x in (os.environ.get("ADMINS", "6270063580").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>Hello {mention},\n Join dulu bree</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>Hello {mention},\n Join dulu ke channel/ grup dibawah untuk ambil file</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
@@ -57,8 +57,8 @@ DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 
-USCH = os.environ.get("USCH", "@ongoingpmid")
-USOW = os.environ.get("USOW", "EL")
+USCH = os.environ.get("USCH", "@Maxsharee")
+USOW = os.environ.get("USOW", "@terabox_viral_neww")
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1474271232)
