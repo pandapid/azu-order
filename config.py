@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6387715337:AAG-GouYhc0CHNSFMgP0bifHTWNunCY2Weg")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6380790584:AAHS1_02q6qF00Uag9rsQvgQQxxYvyaubJ4")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "29684228"))
@@ -29,16 +29,16 @@ PORT = os.environ.get("PORT", "8080")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Eln:Chaik2501@cluster0.9ipuplz.mongodb.net/")
-DB_NAME = os.environ.get("DATABASE_NAME", "pusat")
+DB_NAME = os.environ.get("DATABASE_NAME", "pusat2")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001871589417"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001694677224"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002009423518"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001823438565"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋, Enjoy disini.\n\n join @bahan_asupan_sma</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello {mention} 👋, Enjoy disini.\n\n join @pemersatuumatmanusia</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "869513589 6707869392").split()):
@@ -60,8 +60,8 @@ DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'Fals
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 
-USCH = os.environ.get("USCH", "@bahan_asupan_sma")
-USOW = os.environ.get("USOW", "@bahan_asupan_dood")
+USCH = os.environ.get("USCH", "@bokep_smp_tiktok_viral")
+USOW = os.environ.get("USOW", "@bahan_asupan_smp_sma")
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1474271232)
