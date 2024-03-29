@@ -62,7 +62,7 @@ DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'Fals
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 
 USCH = os.environ.get("USCH", "@bahan_asupan_sma")
-USOW = os.environ.get("USOW", "@bahan_asupan_dood")
+USOW = os.environ.get("USOW", "@bahan_asupan_sma")
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1474271232)
